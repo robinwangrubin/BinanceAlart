@@ -1,6 +1,7 @@
 package bot
 
 import (
+	"binanceAlart/common"
 	"binanceAlart/logs"
 	"fmt"
 	"io/ioutil"
@@ -13,7 +14,7 @@ import (
 */
 
 func SendMessageToWeChat(content string) {
-	url := "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxxxxxxxxxx"
+	url := "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=" + common.BotKey
 	method := "POST"
 
 	requestBody := fmt.Sprintf(`{

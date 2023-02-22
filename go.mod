@@ -8,6 +8,7 @@ require (
 	github.com/tidwall/gjson v1.14.4
 	go.uber.org/zap v1.24.0
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
+	gopkg.in/ini.v1 v1.67.0
 )
 
 require (

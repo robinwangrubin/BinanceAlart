@@ -32,14 +32,11 @@ func Judge(point *common.BinanceData) {
 }
 
 func SendMailToCustomer(token string) error {
-	mailServer := "smtp.163.com"
-	mailPort := 465
-	maillUser := "xxxxxxxxxx@163.com"
-	mailPass := "SZZIIJXZOUCERENN"
-	userList := []string{
-		"xxxxxxxxxx@163.com",
-		"xxxxxxxxxx@gmail.com",
-	}
+	mailServer := common.MailServer
+	mailPort := common.MailPort
+	maillUser := common.MaillUser
+	mailPass := common.MailPass
+	userList := common.ToUserList
 
 	m := gomail.NewMessage()
 	nickname := "Binance Alart"
